@@ -7,11 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="top-nav">
+        <div class="container nav-container">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#skills" class="nav-link">Skills</a>
+        </div>
+    </nav>
+
     <header>
         <div class="container">
             <h1>Digna Sukeerthi Abisha David</h1>
             <h2>Embedded Systems Engineer</h2>
             <p>Gdańsk, Poland | digna.david0411@gmail.com</p>
+            <div class="cta-buttons">
+                <a href="Digna_David_EU_ED_Resume.pdf" target="_blank" class="btn">Download Resume (PDF)</a>
+                <a href="https://github.com/DignaDavid04" target="_blank" class="btn btn-outline">View GitHub</a>
+            </div>
         </div>
     </header>
 
@@ -41,7 +54,7 @@
             <div class="edu-block">
                 <h4>Master of Science (MSc) in Automatic Control, Cybernetics, and Robotics</h4>
                 <p><em>Gdańsk University of Technology (Currently Pursuing)</em></p>
-                <p>Specializing in Intelligent Decision Systems and Robotics. Recent academic projects include practical implementations, algorithms, and simulations to solve complex control problems.</p>
+                <p>Specializing in Intelligent Decision Systems and Robotics. <a href="https://github.com/DignaDavid04" target="_blank">View my recent repositories</a> for practical implementations, algorithms, and simulations to solve complex control problems.</p>
             </div>
             <div class="edu-block">
                 <h4>Bachelor of Engineering (BE) in Electronics and Communication</h4>
@@ -51,12 +64,26 @@
 
         <section id="skills">
             <h3>Core Technologies</h3>
-            <ul>
-                <li><strong>Languages:</strong> C, Embedded C, C++ (Foundational), Python, Shell Scripting</li>
-                <li><strong>Protocols & Peripherals:</strong> UART, I2C, SPI, GPIO, EMMC, SFPs, Watchdog, PCIe Drivers</li>
-                <li><strong>Hardware & Architecture:</strong> Broadcom Chipsets (BCM6858, BCM6813, BCM63148), aarch64, Schematics/Datasheets</li>
-                <li><strong>Tools:</strong> JTAG Debugger, Vim, Putty, GIT, Jira, Buildroot configuration</li>
-            </ul>
+            <div class="skills-grid">
+                <div class="skill-column">
+                    <h4>Firmware & OS</h4>
+                    <ul>
+                        <li>C, Embedded C, C++</li>
+                        <li>U-Boot, CFE, Yocto/Buildroot</li>
+                        <li>Linux Device Drivers, OPTEE</li>
+                        <li>Python, Shell Scripting</li>
+                    </ul>
+                </div>
+                <div class="skill-column">
+                    <h4>Hardware & Debugging</h4>
+                    <ul>
+                        <li>Broadcom SoCs (aarch64)</li>
+                        <li>JTAG, Schematic/Datasheet reading</li>
+                        <li>UART, I2C, SPI, GPIO, PCIe</li>
+                        <li>EMMC, SFPs, Watchdog</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="awards">
@@ -70,7 +97,10 @@
 
     <footer>
         <div class="container">
-            <p><a href="mailto:digna.david0411@gmail.com">Email Me</a> | Connect on LinkedIn</p>
+            <p>
+                <a href="mailto:digna.david0411@gmail.com">Email Me</a> | 
+                <a href="https://www.linkedin.com/in/digna-sukeerthi-abisha-david-131639223/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+            </p>
         </div>
     </footer>
 </body>
