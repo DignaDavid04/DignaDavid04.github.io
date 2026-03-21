@@ -1575,6 +1575,18 @@ footer {
 .mb-1 { margin-bottom: 1rem; }
 .mb-2 { margin-bottom: 2rem; }
 
+/* ==================== INLINE BOLD FIX ==================== */
+.highlight-item p strong,
+.responsibilities p strong,
+.project-impact li strong,
+.project-description strong,
+.job-summary strong {
+    display: inline;
+    margin-bottom: 0;
+    color: var(--accent-primary);
+    font-weight: 700;
+}
+
 /* ==================== PRINT STYLES ==================== */
 @media print {
     body {
