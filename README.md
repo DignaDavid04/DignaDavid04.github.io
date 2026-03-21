@@ -82,6 +82,8 @@ git clone https://github.com/DignaDavid04/DignaDavid04.github.io.git
 # Open in browser
 open index.html
 
+---
+
 ## 📞 Contact
 
 **Email**: digna.david0411@gmail.com  
