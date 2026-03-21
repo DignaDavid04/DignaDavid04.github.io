@@ -3,105 +3,946 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digna Sukeerthi Abisha David - Portfolio</title>
+    <meta name="description" content="Digna David - Embedded Systems Engineer with 5+ years experience in C/C++, Linux, RTOS, hardware integration, and robotics. Portfolio showcasing firmware development, signal processing, and autonomous systems projects.">
+    <meta name="keywords" content="Embedded Systems, C Programming, Embedded C, Linux, RTOS, Firmware Development, Hardware Integration, Robotics, Signal Processing, IoT">
+    <title>Digna David | Embedded Systems Engineer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Sticky Navigation -->
     <nav class="top-nav">
         <div class="container nav-container">
             <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
             <a href="#experience" class="nav-link">Experience</a>
-            <a href="#education" class="nav-link">Education</a>
             <a href="#skills" class="nav-link">Skills</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </div>
     </nav>
 
-    <header>
+    <!-- Hero Header -->
+    <header class="hero">
         <div class="container">
-            <h1>Digna Sukeerthi Abisha David</h1>
-            <h2>Embedded Systems Engineer</h2>
-            <p>Gdańsk, Poland | digna.david0411@gmail.com</p>
-            <div class="cta-buttons">
-                <a href="Digna_David_EU_ED_Resume.pdf" target="_blank" class="btn">Download Resume (PDF)</a>
-                <a href="https://github.com/DignaDavid04" target="_blank" class="btn btn-outline">View GitHub</a>
+            <div class="hero-content">
+                <h1>Digna Sukeerthi Abisha David</h1>
+                <h2>Embedded Systems Engineer</h2>
+                <p class="tagline">
+                    Specializing in low-level firmware, hardware-software integration, and real-time systems
+                </p>
+                <p class="location">
+                    <i class="fas fa-map-marker-alt"></i> Gdańsk, Poland | 
+                    <i class="fas fa-envelope"></i> digna.david0411@gmail.com |
+                    <i class="fas fa-phone"></i> +48 792456515
+                </p>
+                
+                <div class="social-links">
+                    <a href="https://github.com/DignaDavid04" target="_blank" class="social-btn" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/digna-sukeerthi-abisha-david-131639223/" target="_blank" class="social-btn" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="mailto:digna.david0411@gmail.com" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> Get in Touch
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
     <main class="container">
-        <section id="about">
-            <h3>About</h3>
-            <p>Experienced Embedded Developer with 5+ years of professional experience in low-level firmware development, hardware software integration, and diagnostics for complex embedded systems. Highly proficient in C and Embedded C, with foundational knowledge of C++. My goal is to contribute deep expertise in C/C++ development and performance optimization to a team focused on revolutionizing smart home/IoT devices.</p>
-        </section>
-
-        <section id="experience">
-            <h3>Professional Experience</h3>
-            <div class="job">
-                <h4>Software Engineer | Capgemini</h4>
-                <p><em>January 2020 - September 2024</em></p>
-                <ul>
-                    <li>Served as a key developer during the SDK Migration in the AT&T project for high-volume Residential Gateways (BGW210, BGW320, CGW450) based on Broadcom chipsets.</li>
-                    <li>Authored, analyzed, and updated robust low-level C code focusing on bootloaders (U-Boot/CFE), device tree configuration, and memory analysis on aarch64 architectures.</li>
-                    <li>Developed and verified controller functionality for peripherals including GPIO, SFPs, LEDs, Watchdog, and EMMC.</li>
-                    <li>Utilized JTAG Debugger to resolve critical platform-related bugs and confirmed BIST functionality across products.</li>
-                    <li>Implemented a complex security layer involving AES encryption and integrated SecureOS for OPTEE, RPMB, and ROOTFS Encryption access.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="education">
-            <h3>Education & Projects</h3>
-            <div class="edu-block">
-                <h4>Master of Science (MSc) in Automatic Control, Cybernetics, and Robotics</h4>
-                <p><em>Gdańsk University of Technology (Currently Pursuing)</em></p>
-                <p>Specializing in Intelligent Decision Systems and Robotics. <a href="https://github.com/DignaDavid04" target="_blank">View my recent repositories</a> for practical implementations, algorithms, and simulations to solve complex control problems.</p>
-            </div>
-            <div class="edu-block">
-                <h4>Bachelor of Engineering (BE) in Electronics and Communication</h4>
-                <p><em>Anna University Chennai | May 2018</em></p>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h3>Core Technologies</h3>
-            <div class="skills-grid">
-                <div class="skill-column">
-                    <h4>Firmware & OS</h4>
-                    <ul>
-                        <li>C, Embedded C, C++</li>
-                        <li>U-Boot, CFE, Yocto/Buildroot</li>
-                        <li>Linux Device Drivers, OPTEE</li>
-                        <li>Python, Shell Scripting</li>
-                    </ul>
-                </div>
-                <div class="skill-column">
-                    <h4>Hardware & Debugging</h4>
-                    <ul>
-                        <li>Broadcom SoCs (aarch64)</li>
-                        <li>JTAG, Schematic/Datasheet reading</li>
-                        <li>UART, I2C, SPI, GPIO, PCIe</li>
-                        <li>EMMC, SFPs, Watchdog</li>
-                    </ul>
+        
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h3><i class="fas fa-user-circle"></i> About Me</h3>
+            <div class="about-content">
+                <p class="lead">
+                    Embedded Systems Engineer with <strong>5+ years of commercial experience</strong> in 
+                    low-level C/C++ firmware development, secure hardware-software integration, and 
+                    real-time system diagnostics for production-grade embedded devices.
+                </p>
+                <p>
+                    Currently pursuing <strong>Master's in Robotics and Control Systems</strong> at Gdańsk 
+                    University of Technology (GPA 4.46/5.0), I combine deep embedded Linux expertise with 
+                    advanced research in <strong>machine learning, signal processing, and computer vision</strong> 
+                    for autonomous systems.
+                </p>
+                <p>
+                    My professional background spans <strong>bootloader development, device driver programming, 
+                    JTAG debugging, and security implementation</strong> for high-volume consumer devices based 
+                    on Broadcom SoCs. I excel at bridging hardware constraints with software innovation to 
+                    deliver robust, scalable embedded solutions.
+                </p>
+                
+                <div class="expertise-grid">
+                    <div class="expertise-card">
+                        <i class="fas fa-microchip"></i>
+                        <h4>Firmware Development</h4>
+                        <p>Bootloaders, device drivers, interrupt handling, real-time constraints</p>
+                    </div>
+                    <div class="expertise-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Security & Encryption</h4>
+                        <p>AES encryption, secure boot, OPTEE, RPMB, cryptographic key management</p>
+                    </div>
+                    <div class="expertise-card">
+                        <i class="fas fa-plug"></i>
+                        <h4>Hardware Integration</h4>
+                        <p>UART, I2C, SPI, GPIO, JTAG debugging, schematic analysis</p>
+                    </div>
+                    <div class="expertise-card">
+                        <i class="fas fa-brain"></i>
+                        <h4>Autonomous Systems</h4>
+                        <p>Robotics, sensor fusion, path planning, machine learning integration</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="awards">
-            <h3>Awards & Recognition</h3>
-            <ul>
-                <li><strong>Individual Excellence Award:</strong> Recognized for demonstrating accountability in performance reviews.</li>
-                <li><strong>Analytical Skill Commendation:</strong> Commended for rapid assimilation of new modules and addressing field-related issues.</li>
-            </ul>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h3><i class="fas fa-rocket"></i> Featured Projects</h3>
+            <p class="section-subtitle">
+                A selection of academic and personal projects demonstrating embedded systems expertise, 
+                real-time programming, and autonomous system development.
+            </p>
+
+            <!-- Filter Tabs (Optional - can be made functional with JS later) -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="embedded">Embedded Systems</button>
+                <button class="filter-btn" data-filter="robotics">Robotics</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="signal">Signal Processing</button>
+            </div>
+
+            <!-- Project 1: CarryBot - Completed -->
+            <div class="project-card" data-category="embedded robotics">
+                <div class="project-header">
+                    <div class="project-title-group">
+                        <h4>
+                            <i class="fas fa-robot"></i> Autonomous Mobile Robot Co-Simulation (CarryBot)
+                        </h4>
+                        <span class="status-badge completed">Completed • Feb 2026</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag tag-embedded">Embedded Systems</span>
+                        <span class="tag tag-robotics">Robotics</span>
+                        <span class="tag tag-hil">Hardware-in-Loop</span>
+                    </div>
+                </div>
+
+                <div class="project-tech-stack">
+                    <strong>Technologies:</strong>
+                    <span class="tech">Python</span>
+                    <span class="tech">C++</span>
+                    <span class="tech">Arduino</span>
+                    <span class="tech">Webots</span>
+                    <span class="tech">Proteus</span>
+                    <span class="tech">JavaScript</span>
+                    <span class="tech">Flask</span>
+                </div>
+
+                <div class="project-content">
+                    <p class="project-description">
+                        <strong>Airport logistics robot with "split-brain" architecture</strong> — decoupling 
+                        high-level Python AI (A* pathfinding, YOLOv8 computer vision) from low-level Arduino 
+                        embedded safety protocols communicating via UART.
+                    </p>
+
+                    <div class="project-highlights">
+                        <div class="highlight-row">
+                            <div class="highlight-item">
+                                <i class="fas fa-microchip"></i>
+                                <div>
+                                    <strong>Embedded Firmware Development</strong>
+                                    <p>Arduino Mega 2560 firmware implementing state machine logic (LOCKED/UNLOCKED), 
+                                    15cm ultrasonic safety envelope, IMU-based heading control (MPU6050), and 
+                                    emergency stop protocols.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-vial"></i>
+                                <div>
+                                    <strong>Hardware-in-the-Loop Testing</strong>
+                                    <p>Integrated Webots R2025a physics simulation with Proteus 8 circuit verification, 
+                                    validating embedded firmware before hardware deployment. Achieved <strong>48ms 
+                                    control latency</strong> for real-time telemetry.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="highlight-row">
+                            <div class="highlight-item">
+                                <i class="fas fa-chart-line"></i>
+                                <div>
+                                    <strong>Real-Time Telemetry Dashboard</strong>
+                                    <p>Built operator interface using JavaScript (Flask-SocketIO, Chart.js) with 
+                                    live camera feeds, battery voltage monitoring, GPS position tracking, and 
+                                    bi-directional command/control interface.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-robot"></i>
+                                <div>
+                                    <strong>Autonomous Navigation</strong>
+                                    <p>Implemented A* pathfinding on 0.2m grid, YOLOv8-based pedestrian detection, 
+                                    and lidar-based obstacle avoidance with real-time sensor fusion.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-impact">
+                        <h5><i class="fas fa-bullseye"></i> Key Achievements</h5>
+                        <ul>
+                            <li><strong>Architecture:</strong> Successfully decoupled mission-critical safety logic from high-level AI, applicable to automotive, robotics, and aerospace domains</li>
+                            <li><strong>Testing:</strong> Hardware-in-the-loop methodology reduced hardware iteration costs and validated firmware reliability pre-deployment</li>
+                            <li><strong>Integration:</strong> Seamless UART communication protocol between Python supervisor and Arduino safety controller</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-resources">
+                        <a href="https://github.com/DignaDavid04/Autonomous_Airport_Assistant_Robot-CarryBot" 
+                           target="_blank" class="resource-link">
+                            <i class="fab fa-github"></i> GitHub Repository <span class="private-tag">Private</span>
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1xUi-tsgTfJui84QxxL2b7y9v_UPeionF?usp=sharing" 
+                           target="_blank" class="resource-link">
+                            <i class="fas fa-file-pdf"></i> Full Documentation (Report, Paper, Presentation)
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/1xUi-tsgTfJui84QxxL2b7y9v_UPeionF?usp=sharing" 
+                           target="_blank" class="resource-link">
+                            <i class="fas fa-video"></i> Demo Video
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Cognitive Architecture - Ongoing -->
+            <div class="project-card" data-category="robotics ml">
+                <div class="project-header">
+                    <div class="project-title-group">
+                        <h4>
+                            <i class="fas fa-brain"></i> Cognitive Architecture for Autonomous Agents
+                        </h4>
+                        <span class="status-badge ongoing">Ongoing • Master's Thesis</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag tag-robotics">Robotics</span>
+                        <span class="tag tag-ml">Machine Learning</span>
+                        <span class="tag tag-vision">Computer Vision</span>
+                    </div>
+                </div>
+
+                <div class="project-tech-stack">
+                    <strong>Technologies:</strong>
+                    <span class="tech">C++</span>
+                    <span class="tech">Python</span>
+                    <span class="tech">PyTorch</span>
+                    <span class="tech">CUDA</span>
+                    <span class="tech">Webots</span>
+                    <span class="tech">YOLOv8</span>
+                    <span class="tech">FastAPI</span>
+                </div>
+
+                <div class="project-content">
+                    <p class="project-description">
+                        <strong>Research Project:</strong> Validating that autonomous agents with episodic memory 
+                        and subjective qualia layers exhibit superior adaptive behavior in novel hazardous 
+                        environments compared to standard reactive agents — implemented in Webots R2025a factory 
+                        rescue simulation.
+                    </p>
+
+                    <div class="project-highlights">
+                        <div class="highlight-row">
+                            <div class="highlight-item">
+                                <i class="fas fa-code"></i>
+                                <div>
+                                    <strong>C++ Computer Vision Pipeline</strong>
+                                    <p>Developed CUDA-accelerated YOLOv8 object detection, K-means color extraction, 
+                                    and HSV hazard detection modules with BLAS-optimized cosine distance metrics 
+                                    for real-time feature vector comparison.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-memory"></i>
+                                <div>
+                                    <strong>Deep Learning Integration</strong>
+                                    <p>PyTorch CNN/LSTM episodic memory model generating κ (kappa) traces for 
+                                    fuzzy-logic decision-making, targeting <strong>sub-100ms decision latency</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="highlight-row">
+                            <div class="highlight-item">
+                                <i class="fas fa-chart-area"></i>
+                                <div>
+                                    <strong>Real-Time Telemetry System</strong>
+                                    <p>FastAPI + WebSocket dashboard with Chart.js visualization showing live agent 
+                                    states, annotated camera feeds, and performance overlays (FPS, GPU utilization, 
+                                    memory usage).</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-calculator"></i>
+                                <div>
+                                    <strong>Fuzzy Logic Controller</strong>
+                                    <p>Implemented Action Potential formula combining episodic memory confidence 
+                                    with Universal Fear baseline for context-aware hazard response.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-impact">
+                        <h5><i class="fas fa-lightbulb"></i> Applications</h5>
+                        <ul>
+                            <li><strong>Autonomous Vehicles:</strong> Decision-making in GPS-denied or unmapped environments</li>
+                            <li><strong>Robotics:</strong> Adaptive behavior learning for search-and-rescue operations</li>
+                            <li><strong>Industrial Automation:</strong> Fault-tolerant navigation in dynamic factory floors</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-resources">
+                        <a href="https://github.com/DignaDavid04/ISD_Qualia_Cognitive_Architecture" 
+                           target="_blank" class="resource-link">
+                            <i class="fab fa-github"></i> GitHub Repository <span class="private-tag">Private</span>
+                        </a>
+                        <span class="resource-note">
+                            <i class="fas fa-lock"></i> Code samples and architecture documentation available upon request
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Environmental Sound Classification - Ongoing -->
+            <div class="project-card" data-category="ml signal">
+                <div class="project-header">
+                    <div class="project-title-group">
+                        <h4>
+                            <i class="fas fa-wave-square"></i> Environmental Sound Classification System
+                        </h4>
+                        <span class="status-badge ongoing">Ongoing • Updated March 2026</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag tag-ml">Machine Learning</span>
+                        <span class="tag tag-signal">Signal Processing</span>
+                        <span class="tag tag-embedded">Edge Computing</span>
+                    </div>
+                </div>
+
+                <div class="project-tech-stack">
+                    <strong>Technologies:</strong>
+                    <span class="tech">Python</span>
+                    <span class="tech">PyTorch</span>
+                    <span class="tech">CNNs</span>
+                    <span class="tech">Librosa</span>
+                    <span class="tech">FastAPI</span>
+                    <span class="tech">Streamlit</span>
+                </div>
+
+                <div class="project-content">
+                    <p class="project-description">
+                        <strong>ML-powered acoustic warning system</strong> for autonomous agents to classify 
+                        5 safety-critical environmental hazards in real-time: emergency sirens, vehicle collisions, 
+                        train horns, human screams, jackhammer sounds.
+                    </p>
+
+                    <div class="project-highlights">
+                        <div class="highlight-row">
+                            <div class="highlight-item">
+                                <i class="fas fa-wave-square"></i>
+                                <div>
+                                    <strong>Digital Signal Processing</strong>
+                                    <p>Processed 1,000+ raw 44.1kHz mono audio samples into Log-Mel Spectrograms 
+                                    using Short-Time Fourier Transform (STFT). Implemented audio augmentation 
+                                    (pitch shift, time stretch, noise injection) for robust generalization.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-bullseye"></i>
+                                <div>
+                                    <strong>Model Performance</strong>
+                                    <p>Achieved <strong>92% classification accuracy</strong> with <strong>sub-100ms 
+                                    inference latency</strong> on dual-source dataset (Freesound + UrbanSound8K).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="highlight-row">
+                            <div class="highlight-item">
+                                <i class="fas fa-server"></i>
+                                <div>
+                                    <strong>Production Deployment</strong>
+                                    <p>Built FastAPI REST backend serving model predictions alongside Streamlit 
+                                    web UI for audio upload, real-time classification, and confidence visualization.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-database"></i>
+                                <div>
+                                    <strong>Data Engineering</strong>
+                                    <p>Merged and preprocessed data from two independent sources, handled class 
+                                    imbalance, created 3 stratified train/validation splits for cross-validation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-impact">
+                        <h5><i class="fas fa-industry"></i> Industrial Applications</h5>
+                        <ul>
+                            <li><strong>Automotive:</strong> Acoustic hazard detection for ADAS and autonomous vehicles</li>
+                            <li><strong>Robotics:</strong> Environmental awareness for mobile robots in industrial settings</li>
+                            <li><strong>IoT/Edge Devices:</strong> Real-time audio classification on resource-constrained hardware</li>
+                            <li><strong>Safety Systems:</strong> Workplace hazard monitoring and emergency response triggering</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-resources">
+                        <a href="https://github.com/DignaDavid04/Environmental_Sound_Classification" 
+                           target="_blank" class="resource-link">
+                            <i class="fab fa-github"></i> GitHub Repository <span class="private-tag">Private</span>
+                        </a>
+                        <span class="resource-note">
+                            <i class="fas fa-lock"></i> Demo application and technical documentation available upon request
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Projects Grid -->
+            <div class="other-projects">
+                <h4><i class="fas fa-folder-open"></i> Additional Projects</h4>
+                <div class="project-grid">
+                    <div class="mini-project">
+                        <div class="mini-project-header">
+                            <i class="fas fa-heartbeat"></i>
+                            <h5>VitalNexus - Patient Telemetry System</h5>
+                        </div>
+                        <p>Real-time medical telemetry dashboard with ECG waveform visualization, alarm intelligence, 
+                        and multi-patient monitoring for 4-8 concurrent patients.</p>
+                        <div class="mini-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Chart.js</span>
+                            <span>WebSockets</span>
+                        </div>
+                        <a href="https://github.com/DignaDavid04/IUI_VitalNexus" target="_blank" class="mini-link">
+                            <i class="fab fa-github"></i> View Repository
+                        </a>
+                    </div>
+
+                    <div class="mini-project">
+                        <div class="mini-project-header">
+                            <i class="fas fa-wave-square"></i>
+                            <h5>Impulsive Noise Removal</h5>
+                        </div>
+                        <p>Adaptive AR model with exponentially weighted least squares (EW-LS) and linear 
+                        interpolation for removing impulsive noise from music recordings.</p>
+                        <div class="mini-tech">
+                            <span>Python</span>
+                            <span>NumPy</span>
+                            <span>Signal Processing</span>
+                        </div>
+                        <a href="https://github.com/DignaDavid04/Impulsive-Noise-Removal" target="_blank" class="mini-link">
+                            <i class="fab fa-github"></i> View Repository
+                        </a>
+                    </div>
+
+                    <div class="mini-project">
+                        <div class="mini-project-header">
+                            <i class="fas fa-users"></i>
+                            <h5>Emotion-Aware Perception Module</h5>
+                        </div>
+                        <p>Real-time computer vision module analyzing crowd flow to provide autonomous agents 
+                        with high-level perceptual intelligence. Collaborative research project.</p>
+                        <div class="mini-tech">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>Deep Learning</span>
+                        </div>
+                        <a href="https://github.com/DignaDavid04/Emotion-Aware-Perceptual-Module-for-Autonomous-Agent" 
+                           target="_blank" class="mini-link">
+                            <i class="fab fa-github"></i> View Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repository Access Note -->
+            <div class="access-info">
+                <i class="fas fa-info-circle"></i>
+                <div>
+                    <h5>Access to Private Repositories</h5>
+                    <p>
+                        Several projects are hosted in private repositories due to ongoing research or 
+                        collaborative work under institutional guidelines. I'm happy to provide:
+                    </p>
+                    <ul>
+                        <li><strong>Code Access:</strong> GitHub collaborator invitations for technical review</li>
+                        <li><strong>Documentation:</strong> Detailed technical reports, architecture diagrams, and API specifications</li>
+                        <li><strong>Demonstrations:</strong> Recorded demos, live walkthroughs, or deployment access</li>
+                    </ul>
+                    <p class="contact-note">
+                        Please reach out via <a href="mailto:digna.david0411@gmail.com">email</a> or 
+                        <a href="https://linkedin.com/in/digna-sukeerthi-abisha-david-131639223/" target="_blank">LinkedIn</a> 
+                        to request access.
+                    </p>
+                </div>
+            </div>
         </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="section">
+            <h3><i class="fas fa-briefcase"></i> Professional Experience</h3>
+            
+            <div class="timeline">
+                <!-- Software Engineer Role -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <h4>Software Engineer</h4>
+                            <div class="job-meta">
+                                <span><i class="fas fa-building"></i> Capgemini (formerly Aricent/Altran)</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Chennai, India</span>
+                                <span><i class="fas fa-calendar"></i> January 2020 – September 2024</span>
+                            </div>
+                        </div>
+
+                        <p class="job-summary">
+                            Key developer for <strong>AT&T Residential Gateway project</strong> (BGW210, BGW320, CGW450) 
+                            based on Broadcom chipsets, focusing on SDK migration, bootloader development, and 
+                            security implementation for <strong>5M+ deployed devices</strong>.
+                        </p>
+
+                        <div class="responsibilities">
+                            <h5>Core Responsibilities & Achievements:</h5>
+                            <ul>
+                                <li>
+                                    <strong>Embedded Linux Development:</strong>
+                                    <p>Authored and optimized production-grade low-level C code for aarch64 systems. 
+                                    Developed bootloaders (U-Boot/CFE), device tree configurations, and memory 
+                                    management modules for high-volume consumer devices.</p>
+                                </li>
+                                <li>
+                                    <strong>Security Architecture Implementation:</strong>
+                                    <p>Implemented AES-256 encryption during compilation, integrated SecureOS for 
+                                    OPTEE (Trusted Execution Environment), RPMB (Replay Protected Memory Block), 
+                                    and ROOTFS encryption, ensuring strict data execution and tamper-resistant storage.</p>
+                                </li>
+                                <li>
+                                    <strong>Device Driver & Peripheral Integration:</strong>
+                                    <p>Developed and verified low-level controller functionality for 5+ core hardware 
+                                    peripherals: GPIO, SFP modules, LEDs, Watchdog timers, EMMC storage. Proficient 
+                                    in interrupt handling and character device driver development.</p>
+                                </li>
+                                <li>
+                                    <strong>Platform Validation & Debugging:</strong>
+                                    <p>Utilized JTAG debuggers (Lauterbach, OpenOCD) to diagnose and resolve critical 
+                                    platform bugs. Achieved <strong>98% first-pass hardware validation</strong> success 
+                                    rate. Confirmed BIST (Built-In Self-Test) functionality across 3 hardware generations.</p>
+                                </li>
+                                <li>
+                                    <strong>Hardware-Software Co-Development:</strong>
+                                    <p>Interpreted complex hardware schematics and datasheets for Broadcom SoC platforms 
+                                    (BCM6858, BCM6813, BCM63148). Ensured reliable hardware-software integration during 
+                                    SDK migrations and DDR interface validation.</p>
+                                </li>
+                                <li>
+                                    <strong>DevOps & Automation:</strong>
+                                    <p>Established Docker-based CI/CD pipelines for reproducible cross-compilation. 
+                                    Reduced deployment errors by 35%. Implemented unit testing frameworks, reducing 
+                                    field defects by 40%.</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="tech-stack-used">
+                            <strong>Technologies Used:</strong>
+                            <span class="tech-tag">C/Embedded C</span>
+                            <span class="tech-tag">Linux Kernel</span>
+                            <span class="tech-tag">U-Boot/CFE</span>
+                            <span class="tech-tag">Buildroot</span>
+                            <span class="tech-tag">JTAG</span>
+                            <span class="tech-tag">UART/I2C/SPI</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">Agile/Scrum</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intern Role -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <h4>Software Engineer Intern</h4>
+                            <div class="job-meta">
+                                <span><i class="fas fa-building"></i> Capgemini (formerly Aricent/Altran)</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Chennai, India</span>
+                                <span><i class="fas fa-calendar"></i> February 2019 - January 2020</span>
+                            </div>
+                        </div>
+
+                        <p class="job-summary">
+                            Gained foundational experience in embedded C development lifecycle, code review processes, 
+                            and debugging for bootloader components.
+                        </p>
+
+                        <div class="responsibilities">
+                            <ul>
+                                <li>Assisted senior developers with entry-level C programming tasks and low-level system initialization routines</li>
+                                <li>Developed Python automation scripts for hardware regression testing workflows</li>
+                                <li>Participated in Agile sprint planning, code reviews, and technical documentation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Awards Section -->
+            <div class="awards-section">
+                <h4><i class="fas fa-award"></i> Recognition & Awards</h4>
+                <div class="awards-grid">
+                    <div class="award-card">
+                        <i class="fas fa-trophy"></i>
+                        <h5>Individual Excellence Award</h5>
+                        <p>Recognized for demonstrating accountability, technical leadership, and exceptional 
+                        performance during annual reviews at Capgemini.</p>
+                    </div>
+                    <div class="award-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h5>Analytical Skill Commendation</h5>
+                        <p>Commended for rapid assimilation of new modules and strong analytical capabilities 
+                        in addressing field-related critical issues.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="section">
+            <h3><i class="fas fa-cogs"></i> Technical Skills</h3>
+            
+            <div class="skills-container">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h4><i class="fas fa-code"></i> Programming Languages</h4>
+                    <div class="skill-grid">
+                        <div class="skill-item">
+                            <div class="skill-name">C / Embedded C</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%"></div>
+                            </div>
+                            <div class="skill-years">5 years commercial</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Python</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                            <div class="skill-years">3 years (automation, ML, scripting)</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">C++</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                            <div class="skill-years">Embedded systems, robotics projects</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Shell Scripting (Bash)</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                            <div class="skill-years">Build automation, tooling</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript / HTML / CSS</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%"></div>
+                            </div>
+                            <div class="skill-years">Web interfaces, telemetry dashboards</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Embedded Systems -->
+                <div class="skill-category">
+                    <h4><i class="fas fa-microchip"></i> Embedded Systems & RTOS</h4>
+                    <div class="skill-badges">
+                        <span class="badge-expert">Embedded Linux OS</span>
+                        <span class="badge-expert">Bootloaders (U-Boot/CFE)</span>
+                        <span class="badge-expert">Device Drivers</span>
+                        <span class="badge-proficient">RTOS Concepts (FreeRTOS)</span>
+                        <span class="badge-expert">Buildroot / Yocto</span>
+                        <span class="badge-expert">Cross-Compilation</span>
+                        <span class="badge-expert">Interrupt Handling</span>
+                        <span class="badge-proficient">Real-Time Constraints</span>
+                        <span class="badge-expert">Memory Management</span>
+                    </div>
+                </div>
+
+                <!-- Hardware Integration -->
+                <div class="skill-category">
+                    <h4><i class="fas fa-plug"></i> Hardware Integration & Debugging</h4>
+                    <div class="skill-badges">
+                        <span class="badge-expert">UART / I2C / SPI / GPIO</span>
+                        <span class="badge-expert">JTAG Debugging</span>
+                        <span class="badge-proficient">PWM</span>
+                        <span class="badge-expert">Schematics Reading</span>
+                        <span class="badge-expert">Datasheet Analysis</span>
+                        <span class="badge-proficient">Hardware-in-the-Loop (HIL)</span>
+                        <span class="badge-expert">aarch64 Architecture</span>
+                        <span class="badge-expert">Broadcom SoCs</span>
+                        <span class="badge-proficient">ARM Cortex</span>
+                    </div>
+                </div>
+
+                <!-- Signal Processing -->
+                <div class="skill-category">
+                    <h4><i class="fas fa-wave-square"></i> Signal Processing & Sensor Fusion</h4>
+                    <div class="skill-badges">
+                        <span class="badge-proficient">Digital Signal Processing (FFT, STFT)</span>
+                        <span class="badge-proficient">Audio Processing (Mel Spectrograms)</span>
+                        <span class="badge-proficient">Kalman Filtering</span>
+                        <span class="badge-proficient">Real-Time Filtering</span>
+                        <span class="badge-proficient">Sensor Data Preprocessing</span>
+                        <span class="badge-intermediate">Computer Vision (YOLOv8, OpenCV)</span>
+                    </div>
+                </div>
+
+                <!-- Security & Encryption -->
+                <div class="skill-category">
+                    <h4><i class="fas fa-shield-alt"></i> Security & Encryption</h4>
+                    <div class="skill-badges">
+                        <span class="badge-expert">AES Encryption</span>
+                        <span class="badge-expert">Secure Boot (OPTEE, SecureOS)</span>
+                        <span class="badge-expert">RPMB</span>
+                        <span class="badge-proficient">Cryptographic Key Management</span>
+                        <span class="badge-proficient">Data Integrity Verification</span>
+                    </div>
+                </div>
+
+                <!-- DevOps & Tools -->
+                <div class="skill-category">
+                    <h4><i class="fas fa-tools"></i> DevOps & Development Tools</h4>
+                    <div class="skill-badges">
+                        <span class="badge-expert">Git / GitHub</span>
+                        <span class="badge-proficient">Docker</span>
+                        <span class="badge-proficient">CI/CD Pipelines</span>
+                        <span class="badge-expert">Unit Testing</span>
+                        <span class="badge-proficient">Proteus Simulation</span>
+                        <span class="badge-expert">Vim / GDB</span>
+                        <span class="badge-expert">Jira / Agile</span>
+                        <span class="badge-intermediate">Static Code Analysis</span>
+                    </div>
+                </div>
+
+                <!-- Autonomous Systems & ML -->
+                <div class="skill-category">
+                    <h4><i class="fas fa-robot"></i> Autonomous Systems & Machine Learning</h4>
+                    <div class="skill-badges">
+                        <span class="badge-proficient">Path Planning (A*)</span>
+                        <span class="badge-proficient">Obstacle Avoidance</span>
+                        <span class="badge-proficient">Autonomous Navigation</span>
+                        <span class="badge-proficient">PyTorch / TensorFlow</span>
+                        <span class="badge-proficient">Webots Simulation</span>
+                        <span class="badge-intermediate">ROS (basics)</span>
+                        <span class="badge-proficient">Deep Learning (CNNs, LSTMs)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill Legend -->
+            <div class="skill-legend">
+                <span class="legend-item"><span class="badge-expert">Expert</span> Production experience / 3+ years</span>
+                <span class="legend-item"><span class="badge-proficient">Proficient</span> Project work / 1-3 years</span>
+                <span class="legend-item"><span class="badge-intermediate">Intermediate</span> Academic / Learning</span>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            
+            <div class="education-timeline">
+                <!-- Master's Degree -->
+                <div class="edu-item">
+                    <div class="edu-marker"></div>
+                    <div class="edu-content">
+                        <div class="edu-header">
+                            <h4>Master of Science in Automatic Control, Cybernetics, and Robotics</h4>
+                            <div class="edu-meta">
+                                <span><i class="fas fa-university"></i> Gdańsk University of Technology</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Gdańsk, Poland</span>
+                                <span><i class="fas fa-calendar"></i> Expected 2026</span>
+                            </div>
+                            <div class="gpa-badge">GPA: 4.46 / 5.0</div>
+                        </div>
+                        <div class="edu-details">
+                            <p><strong>Specialization:</strong> Intelligent Decision Systems and Robotics</p>
+                            <div class="coursework">
+                                <strong>Relevant Coursework:</strong>
+                                <div class="course-grid">
+                                    <span class="course-tag">Real-Time Operating Systems</span>
+                                    <span class="course-tag">Embedded System Design</span>
+                                    <span class="course-tag">Digital Signal Processing</span>
+                                    <span class="course-tag">Autonomous Mobile Robots</span>
+                                    <span class="course-tag">Sensor Fusion & Kalman Filtering</span>
+                                    <span class="course-tag">Machine Learning for Control</span>
+                                    <span class="course-tag">Computer Vision</span>
+                                    <span class="course-tag">Intelligent Decision Systems</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bachelor's Degree -->
+                <div class="edu-item">
+                    <div class="edu-marker"></div>
+                    <div class="edu-content">
+                        <div class="edu-header">
+                            <h4>Bachelor of Engineering in Electronics and Communication</h4>
+                            <div class="edu-meta">
+                                <span><i class="fas fa-university"></i> Anna University</span>
+                                <span><i class="fas fa-map-marker-alt"></i> Chennai, India</span>
+                                <span><i class="fas fa-calendar"></i> May 2018</span>
+                            </div>
+                            <div class="gpa-badge">CGPA: 7.11 / 10.0</div>
+                        </div>
+                        <div class="edu-details">
+                            <p>
+                                <strong>Foundation in:</strong> Microprocessors & Microcontrollers, 
+                                Digital Signal Processing, Communication Systems, VLSI Design, 
+                                Control Systems Engineering
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <h3><i class="fas fa-envelope-open-text"></i> Let's Connect</h3>
+            <p class="contact-intro">
+                I'm actively seeking opportunities in <strong>embedded systems development, firmware engineering, 
+                robotics, IoT, and real-time systems</strong>. Available for remote work or relocation within EU.
+            </p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-envelope fa-3x"></i>
+                    <h4>Email</h4>
+                    <a href="mailto:digna.david0411@gmail.com">digna.david0411@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                    <h4>LinkedIn</h4>
+                    <a href="https://linkedin.com/in/digna-sukeerthi-abisha-david-131639223/" target="_blank">
+                        Connect with me
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-github fa-3x"></i>
+                    <h4>GitHub</h4>
+                    <a href="https://github.com/DignaDavid04" target="_blank">
+                        View repositories
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone fa-3x"></i>
+                    <h4>Phone</h4>
+                    <a href="tel:+48792456515">+48 792 456 515</a>
+                </div>
+            </div>
+
+            <div class="cta-final">
+                <p>
+                    <strong>Interested in discussing opportunities or collaboration?</strong><br>
+                    Feel free to reach out — I'm always open to interesting projects in embedded systems, 
+                    robotics, and autonomous technologies.
+                </p>
+                <a href="mailto:digna.david0411@gmail.com" class="btn btn-primary btn-large">
+                    <i class="fas fa-paper-plane"></i> Get in Touch
+                </a>
+            </div>
+        </section>
+
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>
-                <a href="mailto:digna.david0411@gmail.com">Email Me</a> | 
-                <a href="https://www.linkedin.com/in/digna-sukeerthi-abisha-david-131639223/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
-            </p>
+            <div class="footer-content">
+                <p>&copy; 2025 Digna Sukeerthi Abisha David | Embedded Systems Engineer</p>
+                <div class="footer-links">
+                    <a href="mailto:digna.david0411@gmail.com">Email</a>
+                    <a href="https://linkedin.com/in/digna-sukeerthi-abisha-david-131639223/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/DignaDavid04" target="_blank">GitHub</a>
+                </div>
+                <p class="footer-note">
+                    <i class="fas fa-map-marker-alt"></i> Based in Gdańsk, Poland • Open to remote work & EU relocation
+                </p>
+            </div>
         </div>
     </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Simple project filter (optional - can be expanded)
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projects = document.querySelectorAll('.project-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                const filter = btn.getAttribute('data-filter');
+                
+                // Simple show/hide based on data-category
+                // (This is a basic implementation - can be enhanced)
+                projects.forEach(project => {
+                    if (filter === 'all') {
+                        project.style.display = 'block';
+                    } else {
+                        const categories = project.getAttribute('data-category');
+                        if (categories && categories.includes(filter)) {
+                            project.style.display = 'block';
+                        } else {
+                            project.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
