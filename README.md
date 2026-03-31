@@ -35,6 +35,10 @@ Master's thesis: Episodic memory-driven decision-making for autonomous agents.
 ML-powered acoustic hazard detection system.  
 **Tech**: Python, PyTorch, CNNs, FastAPI | **Achievement**: 92% accuracy, <100ms latency
 
+### [AWS Weather Trends Pipeline](https://github.com/DignaDavid04/aws-weather-trends-pipeline)
+End-to-end cloud data pipeline using AWS EMR, PySpark, and S3.  
+**Tech**: AWS EMR, S3, EC2, PySpark, Hadoop, Boto3, Matplotlib | **Achievement**: Full cloud pipeline with custom forecasting
+
 ---
 
 ## 💼 Experience

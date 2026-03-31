@@ -1,8 +1,3 @@
-/* ==========================================
-   UNIVERSAL EMBEDDED SYSTEMS PORTFOLIO
-   Modern, Professional, Industry-Agnostic
-   ========================================== */
-
 /* ==================== CSS VARIABLES ==================== */
 :root {
     /* Color Palette */
@@ -517,6 +512,12 @@ a:hover {
     background-color: rgba(69, 184, 216, 0.1);
     color: var(--accent-secondary);
     border-color: var(--accent-secondary);
+}
+
+.tag-cloud {
+    background-color: rgba(255, 152, 0, 0.1);
+    color: #ffb74d;
+    border-color: #ffb74d;
 }
 
 .tag-ml {

@@ -113,11 +113,12 @@
                 real-time programming, and autonomous system development.
             </p>
 
-            <!-- Filter Tabs (Optional - can be made functional with JS later) -->
+            <!-- Filter Tabs -->
             <div class="project-filters">
                 <button class="filter-btn active" data-filter="all">All Projects</button>
                 <button class="filter-btn" data-filter="embedded">Embedded Systems</button>
                 <button class="filter-btn" data-filter="robotics">Robotics</button>
+                <button class="filter-btn" data-filter="cloud">Cloud & Data</button>
                 <button class="filter-btn" data-filter="ml">Machine Learning</button>
                 <button class="filter-btn" data-filter="signal">Signal Processing</button>
             </div>
@@ -412,6 +413,106 @@
                         <span class="resource-note">
                             <i class="fas fa-lock"></i> Demo application and technical documentation available upon request
                         </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: AWS Weather Trends Pipeline - Completed -->
+            <div class="project-card" data-category="cloud ml">
+                <div class="project-header">
+                    <div class="project-title-group">
+                        <h4>
+                            <i class="fas fa-cloud"></i> AWS Weather Trends Pipeline
+                        </h4>
+                        <span class="status-badge completed">Completed • June 2025</span>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag tag-cloud">Cloud Engineering</span>
+                        <span class="tag tag-ml">Data Engineering</span>
+                        <span class="tag tag-signal">Big Data</span>
+                    </div>
+                </div>
+
+                <div class="project-tech-stack">
+                    <strong>Technologies:</strong>
+                    <span class="tech">AWS EMR</span>
+                    <span class="tech">Amazon S3</span>
+                    <span class="tech">EC2</span>
+                    <span class="tech">PySpark</span>
+                    <span class="tech">Hadoop</span>
+                    <span class="tech">Python</span>
+                    <span class="tech">Boto3</span>
+                    <span class="tech">Matplotlib</span>
+                </div>
+
+                <div class="project-content">
+                    <p class="project-description">
+                        <strong>End-to-end cloud data engineering pipeline</strong> that processes historical 
+                        weather data using Apache Spark (PySpark) on an AWS EMR cluster, stores results in 
+                        Amazon S3, generates trend visualizations, and forecasts future weather conditions 
+                        using a custom-built linear regression model.
+                    </p>
+
+                    <div class="project-highlights">
+                        <div class="highlight-row">
+                            <div class="highlight-item">
+                                <i class="fas fa-server"></i>
+                                <div>
+                                    <strong>Distributed Data Processing</strong>
+                                    <p>Configured and deployed a multi-node EMR cluster (emr-7.9.0) with Spark 
+                                    3.5.5, Hadoop 3.4.1, and Hive on m4.large EC2 instances. Processed raw 
+                                    weather CSV data from S3 using PySpark with S3A connector for scalable 
+                                    data ingestion.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-chart-line"></i>
+                                <div>
+                                    <strong>Trend Analysis & Aggregation</strong>
+                                    <p>Computed weekly and monthly aggregates (min/max/avg temperature, wind 
+                                    speed, total precipitation) using PySpark groupBy operations with proper 
+                                    data type casting and null handling for data quality.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="highlight-row">
+                            <div class="highlight-item">
+                                <i class="fas fa-brain"></i>
+                                <div>
+                                    <strong>Custom Forecasting Model</strong>
+                                    <p>Built a least-squares linear regression model from scratch without 
+                                    external ML libraries. Generates 4-week ahead forecasts for temperature, 
+                                    wind speed, and precipitation with a <strong>max(0, prediction)</strong> 
+                                    constraint to prevent physically impossible negative values.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <div>
+                                    <strong>Cloud Infrastructure & Automation</strong>
+                                    <p>Designed S3 bucket architecture for data lifecycle management. Configured 
+                                    IAM roles (EMR_DefaultRole, EMR_EC2_DefaultRole) for secure access. Automated 
+                                    plot generation and S3 upload via Boto3. Integrated GitHub via SSH from EMR 
+                                    master node using PuTTY.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-impact">
+                        <h5><i class="fas fa-bullseye"></i> Key Achievements</h5>
+                        <ul>
+                            <li><strong>Architecture:</strong> End-to-end pipeline: S3 (data) → EMR (processing) → S3 (output) with automated visualization and forecasting</li>
+                            <li><strong>AWS Skills:</strong> Hands-on experience with EMR cluster provisioning, S3 storage management, EC2 instances, and IAM role configuration</li>
+                            <li><strong>DevOps:</strong> SSH key-based GitHub integration from EMR master node, spark-submit job execution, and reproducible cloud workflows</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-resources">
+                        <a href="https://github.com/DignaDavid04/aws-weather-trends-pipeline" 
+                           target="_blank" class="resource-link">
+                            <i class="fab fa-github"></i> GitHub Repository
+                        </a>
                     </div>
                 </div>
             </div>
